@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <a href="#"><img src="3" width="170" height="80" alt="logo-nerds.png"></a>
+        <a href="index.html"><img src="#" width="170" height="80" alt="logo-nerds.png"></a>
         <ul class="main-navigation">
           <li>
             <a href="#">Студия</a>
@@ -29,131 +29,157 @@
       </div>
     </header>
     <main class="container">
-            <div class="catalog-left">
+      <div class="block-catalog">
         <form action="https://echo.htmlacademy.ru" class="catalog-filter" method="post">
-          <div class="block-price">
-            <div class="scale">
-              <span class="to-price"></span>
-              <span class="to-price"></span>
-            </div>
+          <div class="catalog-left">
+            <fieldset>
+              <legend>Стоимость:</legend>
+              <div class="block-price">
+                <div class="scale">
+                  <span class="to-price"></span>
+                  <span class="to-price"></span>
+                </div>
+              </div>
+              <label for="to-price">От</label>
+              <input type="text" name="to-price" id="to-price" placeholder="0" Value="0">
+              <label for="do-price">До</label>
+              <input type="text" name="do-price" id="do-price" placeholder="15 000" Value="15 000">
+            </fieldset>
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul class="product-groups-filter">
+                <li>
+                  <input type="radio" name="group_id" id="Bri" checked>
+                  <label for="Bri">Адаптивная</label>  
+                </li>
+                <li>
+                  <input type="radio" name="group_id" id="Sre">
+                  <label for="Sre">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" name="group_id" id="Aks">
+                  <label for="Aks">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul class="manufacturers-filter">
+                <li>
+                  <input type="checkbox" name="bax" id="bax" checked>
+                  <label for="bax">Слайдер</label> 
+                </li>
+                <li>
+                  <input type="checkbox" name="Mr" id="Mr">
+                  <label for="Mr">Блок преимуществ</label>  
+                </li>
+                <li>
+                  <input type="checkbox" name="Sua" id="Sua" checked>
+                  <label for="Sua">Новости</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="Mal" id="Mal">
+                  <label for="Mal">Галерея</label> 
+                </li>
+                <li>
+                  <input type="checkbox" name="Mur" id="Mur">
+                  <label for="Mur">Корзина</label> 
+                </li>
+              </ul>
+            </fieldset>
+            <button class="btn-filter" type="submit">Показать</button>
           </div>
-          <label for="to-price">От</label>
-          <input type="text" name="to-price" id="to-price" placeholder="0" Value="0">
-          <label for="do-price">До</label>
-          <input type="text" name="do-price" id="do-price" placeholder="15 000" Value="15 000">
-          <h2 class="catalog-title">Сетка:</h2>
-          <ul class="product-groups-filter">
-            <li>
-              <input type="radio" name="group_id" id="Bri" checked>
-              <label for="Bri">Адаптивная</label>  
-            </li>
-            <li>
-              <input type="radio" name="group_id" id="Sre">
-              <label for="Sre">Фиксированная</label>
-            </li>
-            <li>
-              <input type="radio" name="group_id" id="Aks">
-              <label for="Aks">Резиновая</label>
-            </li>
-          </ul>
-          <h2 class="catalog-title">Особенности:</h2>
-          <ul class="manufacturers-filter">
-            <li>
-              <input type="checkbox" name="bax" id="bax" checked>
-              <label for="bax">Слайдер</label>  
-            </li>
-            <li>
-              <input type="checkbox" name="Mr" id="Mr">
-              <label for="Mr">Блок преимуществ</label>  
-            </li>
-            <li>
-              <input type="checkbox" name="Sua" id="Sua" checked>
-              <label for="Sua">Новости</label>
-            </li>
-            <li>
-              <input type="checkbox" name="Mal" id="Mal">
-              <label for="Mal">Галерея</label>  
-            </li>
-            <li>
-              <input type="checkbox" name="Mur" id="Mur">
-              <label for="Mur">Корзина</label>  
-            </li>
-          </ul>
-          <button class="btn-filter" type="submit">Показать</button>
+          <div class="block-sort">
+            <fieldset>
+              <legend>Сортировать:</legend>
+              <ul class="filter-sort">
+                <li>
+                  <input type="radio" name="group-sort_id" id="by-priceby-price" checked>
+                  <label for="by-price">По цене</label>
+                </li>
+                <li>
+                  <input type="radio" name="group-sort_id" id="by-type">
+                  <label for="by-type">По типу</label>
+                </li>
+                <li>
+                  <input type="radio" name="group-sort_id" id="by-name">
+                  <label for="by-name">По названию</label>
+                </li>
+                <li>
+                  <a href="#" class="btn">Вниз</a>
+                </li>
+                <li>
+                  <a href="#" class="btn">Вверх</a>
+                </li>
+              </ul>
+            </fieldset>
+          </div>          
         </form>
-      </div>
-      <div class="catalog-content">
-        <div class="filter-sort">
-          <b class="">Сортировать</b>
-          <span class="by-price">По цене</span>
-          <span class="by-type">По типу</span>
-          <span class="by-name">По названию</span>
-          <span class="down">вниз</span>
-          <span class="up">вверх</span>
+        <div class="catalog-content">
+          <article class="catalog-item">
+            <img src="#" width="360" height="580" alt="img/product-1.jpg">
+            <div class="item-block">
+              <h3>Sedona</h3> 
+              <span class="item-text">Информайционный сайт для туристов</span>
+              <a class="btn" href="#">9 900 руб.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <img src="#" width="360" height="580" alt="img/product-1.jpg">
+            <div class="item-block">
+              <h3>Sedona</h3> 
+              <span class="item-text">Информайционный сайт для туристов</span>
+              <a class="btn" href="#">9 900 руб.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <img src="#" width="360" height="580" alt="img/product-1.jpg">
+            <div class="item-block">
+              <h3>Sedona</h3> 
+              <span class="item-text">Информайционный сайт для туристов</span>
+              <a class="btn" href="#">9 900 руб.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <img src="#" width="360" height="580" alt="img/product-1.jpg">
+            <div class="item-block">
+              <h3>Sedona</h3> 
+              <span class="item-text">Информайционный сайт для туристов</span>
+              <a class="btn" href="#">9 900 руб.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <img src="#" width="360" height="580" alt="img/product-1.jpg">
+            <div class="item-block">
+              <h3>Sedona</h3> 
+              <span class="item-text">Информайционный сайт для туристов</span>
+              <a class="btn" href="#">9 900 руб.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <img src="#" width="360" height="580" alt="img/product-1.jpg">
+            <div class="item-block">
+              <h3>Sedona</h3> 
+              <span class="item-text">Информайционный сайт для туристов</span>
+              <a class="btn" href="#">9 900 руб.</a>
+            </div>
+          </article>
+        
+          <ul class="catalog-navigation">
+            <li>
+              <a class="active">1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              <a class="btn-nav" href="#">Следующая</a>
+            </li>
+          </ul>
         </div>
-        <article class="catalog-item">
-          <img src="#" width="360" height="580" alt="img/product-1.jpg">
-          <div class="item-block">
-            <h3>Sedona</h3> 
-            <span class="item-text">Информайционный сайт для туристов</span>
-            <a class="btn" href="#">9 900 руб.</a>
-          </div>
-        </article>
-        <article class="catalog-item">
-          <img src="#" width="360" height="580" alt="img/product-1.jpg">
-          <div class="item-block">
-            <h3>Sedona</h3> 
-            <span class="item-text">Информайционный сайт для туристов</span>
-            <a class="btn" href="#">9 900 руб.</a>
-          </div>
-        </article>
-        <article class="catalog-item">
-          <img src="#" width="360" height="580" alt="img/product-1.jpg">
-          <div class="item-block">
-            <h3>Sedona</h3> 
-            <span class="item-text">Информайционный сайт для туристов</span>
-            <a class="btn" href="#">9 900 руб.</a>
-          </div>
-        </article>
-        <article class="catalog-item">
-          <img src="#" width="360" height="580" alt="img/product-1.jpg">
-          <div class="item-block">
-            <h3>Sedona</h3> 
-            <span class="item-text">Информайционный сайт для туристов</span>
-            <a class="btn" href="#">9 900 руб.</a>
-          </div>
-        </article>
-        <article class="catalog-item">
-          <img src="#" width="360" height="580" alt="img/product-1.jpg">
-          <div class="item-block">
-            <h3>Sedona</h3> 
-            <span class="item-text">Информайционный сайт для туристов</span>
-            <a class="btn" href="#">9 900 руб.</a>
-          </div>
-        </article>
-        <article class="catalog-item">
-          <img src="#" width="360" height="580" alt="img/product-1.jpg">
-          <div class="item-block">
-            <h3>Sedona</h3> 
-            <span class="item-text">Информайционный сайт для туристов</span>
-            <a class="btn" href="#">9 900 руб.</a>
-          </div>
-        </article>
-
-        <ul class="catalog-navigation">
-          <li>
-            <a class="active">1</a>
-          </li>
-          <li>
-            <a href="#">2</a>
-          </li>
-          <li>
-            <a href="#">3</a>
-          </li>
-          <li>
-            <a class="btn-nav" href="#">Следующая</a>
-          </li>
-        </ul>
       </div>
     </main>
     <footer class="main-footer">
