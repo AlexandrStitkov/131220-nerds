@@ -1,0 +1,18 @@
+body {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 300;
+  font-family: 'Roboto';
+  margin: 0;
+}
+.container {
+  width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.main-header{
+  background-color: #eeeeee;
+}
