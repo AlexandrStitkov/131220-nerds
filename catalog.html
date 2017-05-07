@@ -9,8 +9,8 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <a href="index.html"><img src="img/nerds-logo.png" width="170" height="70" alt="logo-nerds.png"></a>
         <nav class="main-navigation">
+          <a href="index.html"><img class="logo" src="img/nerds-logo.png" width="170" height="70" alt="logo-nerds.png"></a>
           <ul>
             <li>
               <a href="#">Студия</a>
@@ -25,11 +25,11 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
+          <div class="user-block">
+            <a href="#" class="cart">Корзина</a>
+          </div>
         </nav>
-        <div class="user-block">
-          <a href="#" class="cart">Корзина</a>
-        </div>
-        <h1>Магазин готовых шаблонов</h1>
+        <h1 class="main-title">Магазин готовых шаблонов</h1>
       </div>
     </header>
     <main class="container">
@@ -169,24 +169,24 @@
             </div>
           </article>
         
-          <ul class="catalog-navigation">
-            <li>
-              <a class="active">1</a>
-            </li>
-            <li>
-              <a href="#">2</a>
-            </li>
-            <li>
-              <a href="#">3</a>
-            </li>
-            <li>
-              <a class="btn-nav" href="#">Следующая</a>
-            </li>
-          </ul>
+          <div class="catalog-nav">
+            <ul class="catalog-navigation clearfix">
+              <li>
+                <a class="active">1</a>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+            </ul>
+            <a class="btn-nav" href="#">Следующая</a>
+          </div>
         </div>
       </div>
     </main>
-    <footer class="main-footer container">
+    <footer class="main-footer">
       <section class="block-map">
         <div class="container">
           <div class="block-contacts">
@@ -197,30 +197,29 @@
           </div>
         </div>
       </section>
-      <section class="block-social">
-        <h3>Социальные сети.</h3>
-        <ul class="social">
-          <li>
-            <a href="#" class="social-btn social-btn-vk">
-              <img src="img/vk-icon.png" width="25" height="15" alt="vk-icon.png">Вконтакте
-            </a>
-          </li>
-          <li>
-            <a href="#" class="social-btn social-btn-fb">
-              <img src="img/fb-icon.png" width="25" height="25" alt="fb-icon.png">Фейсбук
-            </a>
-          </li>
-          <li>
-            <a href="#" class="social-btn social-btn-inst">
-              <img src="img/insta-icon.png" width="25" height="25" alt="insta-icon.png">Инстаграм
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="block-discounts">
-        <h3>Давайте дружить, это выгодно</h3>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </section>
+      <div class="container">
+        <section class="block-social">
+          <h3>Социальные сети.</h3>
+          <ul class="social">
+            <li>
+              <a href="#" class="social-btn social-btn-vk">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-btn social-btn-fb">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-btn social-btn-inst">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="block-discounts">
+          <h3>Давайте дружить, это выгодно</h3>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+      </div>
     </footer>
   </body>
 </html>

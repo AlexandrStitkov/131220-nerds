@@ -20,7 +20,6 @@ body {
 }
 .main-header{
   background-color: #eeeeee;
-  margin-bottom: 80px;
 }
 .main-navigation {
   padding-top: 45px;
@@ -40,13 +39,14 @@ body {
 }
 .main-navigation li{
   float: left;
-  padding: 20px 25px;
 }
 .main-navigation li a{
   text-transform: uppercase;
   text-decoration: none;
   line-height: 30px;
   color: black;
+  padding: 20px 25px;
+  display: block;
 }
 .user-block {
   float: right;
@@ -127,6 +127,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-top: 80px
 }
 .services li {
   width: 300px;
@@ -321,4 +322,95 @@ body {
   margin: 0;
   font-size: 36px;
   line-height: 1;
+}
+/* Страница каталог */
+.main-title {
+  text-align: center;
+  margin: 0;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  font-size: 55px;
+  line-height: 1;
+}
+.main-navigation li a.active {
+  padding: 0;
+  margin: 20px 25px;
+  border-bottom: 2px solid #fb565a;
+}
+.block-catalog{
+  
+}
+.catalog-left {
+  width: 260px;
+  float: left;
+  margin-right: 140px;
+}
+.block-sort {
+  width: 760px;
+  display: inline-block;
+  text-align: right;
+}
+.catalog-content {
+  width: 760px;
+  display: inline-block;
+  font-size: 0;
+  text-align: center;
+}
+.catalog-item {
+  width: 380px;
+  display: inline-block;
+  font-size: 16px;
+}
+.catalog-navigation {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+.catalog-navigation li {
+  display: inline-block;
+}
+.catalog-navigation li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
+  color: black;
+  font-size: 16px;
+  line-height: 50px;
+  margin-right: 8px;
+}
+.catalog-navigation li a.active {
+  background-color: white;
+  border: 1px solid #eeeeee;
+  width: 48px;
+  height: 48px;
+}
+.btn-nav {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  height: 48px;
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
+  font-size: 16px;
+  line-height: 50px;
+  color: black;
+  padding: 0 48px;
+}
+.catalog-nav {
+    float: left;
+}
+.filter-sort {
+  display: inline-block
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.filter-sort li{
+  display: inline-block
 }
