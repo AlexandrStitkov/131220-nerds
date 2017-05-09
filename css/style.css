@@ -7,6 +7,7 @@ body {
   margin: 0;
 }
 .container {
+  display: block;
   width: 1160px;
   margin-right: auto;
   margin-left: auto;
@@ -95,7 +96,7 @@ body {
   line-height: 18px;
   background-color: #fb565a;
   color: white;
-  padding: 16px 45px;
+  padding: 16px 44px;
   display: inline-block;
 }
 .slider img {
@@ -243,8 +244,15 @@ body {
 }
 .company-logo li {
   display: inline-block;
-  width: 288.6px;
-  border-right: 2px solid #eee;
+  width: 25%;
+  background: url(../img/v-line.png) no-repeat;
+  background-position: center right;
+}
+.company-logo li:nth-child(4) {
+  background: none;
+}
+.company-logo li a {
+  display: block;
 }
 .company-logo li:nth-child(4) {
   border: none;
@@ -357,9 +365,14 @@ body {
   text-align: center;
 }
 .catalog-item {
-  width: 380px;
+  width: 360px;
   display: inline-block;
+  vertical-align: top;
   font-size: 16px;
+  margin-bottom: 35px;
+}
+.catalog-item:nth-child(2n+1){
+  margin-right: 40px;
 }
 .catalog-navigation {
   display: inline-block;
@@ -406,11 +419,27 @@ body {
     float: left;
 }
 .filter-sort {
-  display: inline-block
+  display: inline-block;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 .filter-sort li{
   display: inline-block
+}
+#to-price {
+  width: 35%;
+}
+#do-price {
+  width: 35%;
+}
+.product-groups-filter{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.manufacturers-filter {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
