@@ -121,56 +121,56 @@
         </form>
         <div class="catalog-content">
           <article class="catalog-item">
-            <img src="img/img-sedona.jpg" width="360" height="580" alt="img-sedona.jpg">
+            <img src="img/img-sedona.jpg" width="360" height="576" alt="img-sedona.jpg">
             <div class="item-block">
               <h3>Sedona</h3> 
-              <p class="item-text">Информайционный сайт для туристов</p>
-              <a class="btn" href="#">9 900 руб.</a>
+              <p class="item-text">Информационный сайт для туристов</p>
+              <a class="btn-catalog" href="#">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog-item">
-            <img src="img/img-pink.jpg" width="360" height="580" alt="img-pink.jpg">
+            <img src="img/img-pink.jpg" width="360" height="576" alt="img-pink.jpg">
             <div class="item-block">
               <h3>Pink app</h3> 
               <p class="item-text">Продуктовый лендинг приложение для iOS и Android</p>
-              <a class="btn" href="#">9 900 руб.</a>
+              <a class="btn-catalog" href="#">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog-item">
-            <img src="img/img-barbershop.jpg" width="360" height="580" alt="img-barbershop.jpg">
+            <img src="img/img-barbershop.jpg" width="360" height="576" alt="img-barbershop.jpg">
             <div class="item-block">
               <h3>Barbershop</h3> 
               <p class="item-text">Сайт салоны красоты для мужчин, да.</p>
-              <a class="btn" href="#">9 900 руб.</a>
+              <a class="btn-catalog" href="#">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog-item">
-            <img src="img/img-mishka.jpg" width="360" height="580" alt="img-mishka.jpg">
+            <img src="img/img-mishka.jpg" width="360" height="576" alt="img-mishka.jpg">
             <div class="item-block">
               <h3>Mishka</h3> 
               <p class="item-text">Интернет-магазин вязаных игрушек</p>
-              <a class="btn" href="#">9 900 руб.</a>
+              <a class="btn-catalog" href="#">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog-item">
-            <img src="img/img-aplus.jpg" width="360" height="580" alt="img-aplus.jpg">
+            <img src="img/img-aplus.jpg" width="360" height="576" alt="img-aplus.jpg">
             <div class="item-block">
               <h3>A plus</h3> 
               <p class="item-text">Лендинг для курсов повышения квалификации</p>
-              <a class="btn" href="#">9 900 руб.</a>
+              <a class="btn-catalog" href="#">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog-item">
-            <img src="img/img-kvast.jpg" width="360" height="580" alt="img-kvast.jpg">
+            <img src="img/img-kvast.jpg" width="360" height="576" alt="img-kvast.jpg">
             <div class="item-block">
               <h3>Кваст</h3> 
               <p class="item-text">Промо-сайт производителя крафтового кваса</p>
-              <a class="btn" href="#">9 900 руб.</a>
+              <a class="btn-catalog" href="#">9 900 руб.</a>
             </div>
           </article>
         
-          <div class="catalog-nav">
-            <ul class="catalog-navigation clearfix">
+          <div class="catalog-nav clearfix">
+            <ul class="catalog-navigation">
               <li>
                 <a class="active">1</a>
               </li>
@@ -193,7 +193,7 @@
             <h2>Nerds design studio</h2>
             <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <p>тел. +7 (812) 275-75-75</p>
-            <a href="#" class="btn">Напишите нам</a>
+            <a href="#" class="btn btn-map">Напишите нам</a>
           </div>
         </div>
       </section>
@@ -221,5 +221,24 @@
         </section>
       </div>
     </footer>
+    <div class="popup">
+      <form action="https://echo.htmlacademy.ru" class="contact-form" method="post">
+        <h3>Напишите нам</h3>
+        <div class="form-name">
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="name" id="name" placeholder="Представтесь, пожалуйста" required>
+        </div>
+        <div class="form-email">
+          <label for="e-mail">Ваш e-mail:</label>
+          <input type="email" name="e-mail" id="e-mail" placeholder="Для отправки ответа" required>
+        </div>
+        <div class="form-text">
+          <label for="text">Текст письма:</label>
+          <textarea type="text" name="text" id="text" placeholder="В свободной форме" required></textarea>
+        </div>
+        <button class="btn-form" type="submit">Отправить</button>
+        <a href="#contact-form" class="close"></a>
+      </form>
+    </div>
   </body>
 </html>
