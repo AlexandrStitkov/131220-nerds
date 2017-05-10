@@ -36,32 +36,34 @@
       <div class="block-catalog">
         <form action="https://echo.htmlacademy.ru" class="catalog-filter" method="post">
           <div class="catalog-left">
-            <fieldset>
-              <legend>Стоимость:</legend>
-              <div class="block-price">
-                <div class="scale">
-                  <span class="to-price"></span>
-                  <span class="to-price"></span>
-                </div>
+            <h2 class="mt-60 mb-60">Стоимость:</h2>
+            <div class="block-price">
+              <div class="scale">
+                <div class="progress"></div>
+                <span class="to-price" style="left: 0;"></span>
+                <span class="do-price" style="right: 25%;"></span>
               </div>
-              <label for="to-price">От</label>
+            </div>
+            <fieldset>
+              <legend class="hidden">Стоимость:</legend>
+              <label class="mr-10" for="to-price">ОТ</label>
               <input type="text" name="to-price" id="to-price" placeholder="0" Value="0">
-              <label for="do-price">До</label>
+              <label class="ml-30" for="do-price">ДО</label>
               <input type="text" name="do-price" id="do-price" placeholder="15 000" Value="15 000">
             </fieldset>
             <fieldset>
               <legend>Сетка:</legend>
               <ul class="product-groups-filter">
                 <li>
-                  <input type="radio" name="group_id" id="Bri" checked>
-                  <label for="Bri">Адаптивная</label>  
+                  <input class="hidden" type="radio" name="group_id" id="Bri" checked>
+                  <label class="active" for="Bri">Адаптивная</label>  
                 </li>
                 <li>
-                  <input type="radio" name="group_id" id="Sre">
+                  <input class="hidden" type="radio" name="group_id" id="Sre">
                   <label for="Sre">Фиксированная</label>
                 </li>
                 <li>
-                  <input type="radio" name="group_id" id="Aks">
+                  <input class="hidden" type="radio" name="group_id" id="Aks">
                   <label for="Aks">Резиновая</label>
                 </li>
               </ul>
@@ -70,50 +72,50 @@
               <legend>Особенности:</legend>
               <ul class="manufacturers-filter">
                 <li>
-                  <input type="checkbox" name="bax" id="bax" checked>
-                  <label for="bax">Слайдер</label> 
+                  <input class="hidden" type="checkbox" name="bax" id="bax" checked>
+                  <label class="active" for="bax">Слайдер</label> 
                 </li>
                 <li>
-                  <input type="checkbox" name="Mr" id="Mr">
+                  <input class="hidden" type="checkbox" name="Mr" id="Mr">
                   <label for="Mr">Блок преимуществ</label>  
                 </li>
                 <li>
-                  <input type="checkbox" name="Sua" id="Sua" checked>
-                  <label for="Sua">Новости</label>
+                  <input class="hidden" type="checkbox" name="Sua" id="Sua" checked>
+                  <label class="active" for="Sua">Новости</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="Mal" id="Mal">
+                  <input class="hidden" type="checkbox" name="Mal" id="Mal">
                   <label for="Mal">Галерея</label> 
                 </li>
                 <li>
-                  <input type="checkbox" name="Mur" id="Mur">
+                  <input class="hidden" type="checkbox" name="Mur" id="Mur">
                   <label for="Mur">Корзина</label> 
                 </li>
               </ul>
             </fieldset>
             <button class="btn-filter" type="submit">Показать</button>
           </div>
-          <div class="block-sort">
+          <div class="block-sort mt-60 mb-60">
             <fieldset>
               <legend>Сортировать:</legend>
               <ul class="filter-sort">
                 <li>
-                  <input type="radio" name="group-sort_id" id="by-price" checked>
+                  <input class="hidden" type="radio" name="group-sort_id" id="by-price" checked>
                   <label for="by-price">По цене</label>
                 </li>
                 <li>
-                  <input type="radio" name="group-sort_id" id="by-type">
+                  <input class="hidden" type="radio" name="group-sort_id" id="by-type">
                   <label for="by-type">По типу</label>
                 </li>
                 <li>
-                  <input type="radio" name="group-sort_id" id="by-name">
+                  <input class="hidden" type="radio" name="group-sort_id" id="by-name">
                   <label for="by-name">По названию</label>
                 </li>
                 <li>
-                  <a href="#" class="btn-down">Вниз</a>
+                  <a href="#" class="btn-down"></a>
                 </li>
                 <li>
-                  <a href="#" class="btn-up">Вверх</a>
+                  <a href="#" class="btn-up"></a>
                 </li>
               </ul>
             </fieldset>

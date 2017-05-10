@@ -52,16 +52,17 @@ body {
 .user-block {
   float: right;
 }
-.user-block a {
+.user-block .cart {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 20px 25px;
-  line-height: 30px;
+  text-align: right;
   display: block;
   background: url(../img/cart-icon.png) no-repeat;
-  background-position: 0px;
-  width: 100px;
-  color: black;
+  background-position: 0px center;
+  margin: 20px 25px;
+  line-height: 30px;
+  width: 115px;
+  color: #000000;
 }
 .slider{
   list-style: none;
@@ -359,6 +360,9 @@ body {
   margin: 20px 25px;
   border-bottom: 2px solid #fb565a;
 }
+.main-navigation a.active {
+  border-bottom: 2px solid #fb565a;
+}
 .catalog-left {
   width: 260px;
   float: left;
@@ -368,6 +372,131 @@ body {
   width: 760px;
   display: inline-block;
   text-align: right;
+  margin: 60px 0;
+}
+.block-sort fieldset {
+  text-transform: uppercase;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1;
+}
+.block-sort legend {
+  float: left;
+  font-weight: bold;
+}
+legend {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.catalog-left legend {
+  float: left;
+  width: 100%;
+  margin-top: 60px;
+}
+.catalog-left h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
+.mt-60 {
+  margin-top: 60px;
+}
+.mr-10 {
+  margin-right: 10px
+}
+.ml-30 {
+  margin-left: 30px;
+}
+.block-price {
+  width: 260px;
+  height: 80px;
+  margin-bottom: 15px;
+  background-color: #eeeeee;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+.scale {
+  width: 220px;
+  height: 2px;
+  margin: 0 20px;
+  background-color: #ddd;
+}
+.progress {
+  width: 65%;
+  background-color: #00ca74;
+  height: 100%;
+}
+.to-price {
+  position: relative;
+  top: -12px;
+  width: 20px;
+  height: 23px;
+  display: inline-block;
+  background: url(../img/slider-round.png) no-repeat;
+}
+.do-price {
+  position: relative;
+  float: right;
+  top: -12px;
+  width: 20px;
+  height: 23px;
+  display: inline-block;
+  background: url(../img/slider-round.png) no-repeat;
+}
+.product-groups-filter li label {
+  display: inline-block;
+  background: url(../img/radio-off.png) no-repeat;
+  cursor: pointer;
+  padding-left: 35px;
+  margin-top: 20px;
+}
+.product-groups-filter li label.active {
+  display: inline-block;
+  background: url(../img/radio-on.png) no-repeat;
+  cursor: pointer;
+  padding-left: 35px;
+  margin-top: 20px;
+}
+.manufacturers-filter li label {
+  display: inline-block;
+  background: url(../img/checkbox-off.png) no-repeat;
+  cursor: pointer;
+  padding-left: 35px;
+  margin-top: 20px;
+}
+.manufacturers-filter li label.active {
+  display: inline-block;
+  background: url(../img/checkbox-on.png) no-repeat;
+  cursor: pointer;
+  padding-left: 35px;
+  margin-top: 20px;
+}
+.btn-down {
+  display: block;
+  background: url(../img/sort-down.png) no-repeat;
+  width: 9px;
+  height: 9px;
+  margin-left: 25px;
+  margin-right: 20px;
+  margin-bottom: 2px;
+}
+.btn-up {
+  display: block;
+  background: url(../img/sort-up.png) no-repeat;
+  width: 9px;
+  height: 9px;
+  margin-bottom: 2px;
 }
 .catalog-content {
   width: 760px;
@@ -465,13 +594,30 @@ body {
   padding: 0;
 }
 .filter-sort li{
-  display: inline-block
+  display: inline-block;
+  vertical-align: middle;
+}
+.filter-sort label {
+  margin-right: 25px;
 }
 #to-price {
-  width: 35%;
+  width: 80px;
+  height: 40px;
+  box-sizing: border-box;
+  text-align: center;
+  border: none;
+  background: #eeeeee;
+  border-radius: 2px;
 }
 #do-price {
-  width: 35%;
+  width: 80px;
+  height: 40px;
+  box-sizing: border-box;
+  text-align: center;
+  border: none;
+  background: #eeeeee;
+  border-radius: 2px;
+  float: right;
 }
 .product-groups-filter{
   list-style: none;
@@ -489,6 +635,7 @@ body {
   height: 50px;
   background: #eee;
   border: none;
+  margin-top: 50px;
 }
 /* модальное окно */
 .popup {
@@ -575,6 +722,7 @@ body {
   border-color: #d7dcde;
   border-style: solid;
   border-radius: 2px;
+  border-width: 2px;
 }
 .btn-form {
   text-transform: uppercase;
