@@ -89,7 +89,7 @@
                 </li>
                 <li>
                   <input class="hidden" type="checkbox" name="Mur" id="Mur">
-                  <label for="Mur">Корзина</label> 
+                  <label class="blocked" for="Mur">Корзина</label> 
                 </li>
               </ul>
             </fieldset>
@@ -101,18 +101,18 @@
               <ul class="filter-sort">
                 <li>
                   <input class="hidden" type="radio" name="group-sort_id" id="by-price" checked>
-                  <label for="by-price">По цене</label>
+                  <label class="price active" for="by-price">По цене</label>
                 </li>
                 <li>
                   <input class="hidden" type="radio" name="group-sort_id" id="by-type">
-                  <label for="by-type">По типу</label>
+                  <label class="price" for="by-type">По типу</label>
                 </li>
                 <li>
                   <input class="hidden" type="radio" name="group-sort_id" id="by-name">
-                  <label for="by-name">По названию</label>
+                  <label class="price" for="by-name">По названию</label>
                 </li>
                 <li>
-                  <a href="#" class="btn-down"></a>
+                  <a href="#" class="btn-down active"></a>
                 </li>
                 <li>
                   <a href="#" class="btn-up"></a>
@@ -127,7 +127,7 @@
             <div class="item-block">
               <h3>Sedona</h3> 
               <p class="item-text">Информационный сайт для туристов</p>
-              <a class="btn-catalog" href="#">9 900 руб.</a>
+              <a class="btn btn-catalog" href="#">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog-item">
@@ -135,7 +135,7 @@
             <div class="item-block">
               <h3>Pink app</h3> 
               <p class="item-text">Продуктовый лендинг приложение для iOS и Android</p>
-              <a class="btn-catalog" href="#">9 900 руб.</a>
+              <a class="btn btn-catalog" href="#">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog-item">
@@ -143,7 +143,7 @@
             <div class="item-block">
               <h3>Barbershop</h3> 
               <p class="item-text">Сайт салоны красоты для мужчин, да.</p>
-              <a class="btn-catalog" href="#">9 900 руб.</a>
+              <a class="btn btn-catalog" href="#">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog-item">
@@ -151,7 +151,7 @@
             <div class="item-block">
               <h3>Mishka</h3> 
               <p class="item-text">Интернет-магазин вязаных игрушек</p>
-              <a class="btn-catalog" href="#">9 900 руб.</a>
+              <a class="btn btn-catalog" href="#">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog-item">
@@ -159,7 +159,7 @@
             <div class="item-block">
               <h3>A plus</h3> 
               <p class="item-text">Лендинг для курсов повышения квалификации</p>
-              <a class="btn-catalog" href="#">9 900 руб.</a>
+              <a class="btn btn-catalog" href="#">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog-item">
@@ -167,7 +167,7 @@
             <div class="item-block">
               <h3>Кваст</h3> 
               <p class="item-text">Промо-сайт производителя крафтового кваса</p>
-              <a class="btn-catalog" href="#">9 900 руб.</a>
+              <a class="btn btn-catalog" href="#">9 900 руб.</a>
             </div>
           </article>
         
@@ -238,7 +238,7 @@
           <label for="text">Текст письма:</label>
           <textarea type="text" name="text" id="text" placeholder="В свободной форме" required></textarea>
         </div>
-        <button class="btn-form" type="submit">Отправить</button>
+        <button class="btn btn-form" type="submit">Отправить</button>
         <a href="#contact-form" class="close"></a>
       </form>
     </div>
