@@ -98,7 +98,6 @@ body {
   margin: 0;
   margin-bottom: 40px;
 }
-
 .btn {
   text-transform: uppercase;
   text-decoration: none;
@@ -116,7 +115,7 @@ body {
   background-color: #e74246;
 }
 .btn:active {
-  border-top: 3px solid #c13135; 
+  border-top: 3px solid #c13135;
   background-color: #d7373b;
   color: #e37376;
   box-sizing: border-box;
@@ -126,6 +125,7 @@ body {
 }
 .btn-map {
   width: 220px;
+  margin-top: 20px;
 }
 .slider img {
   vertical-align: middle;
@@ -181,9 +181,11 @@ body {
 .servises-title {
   margin: 0;
   margin-bottom: 25px;
+  text-transform: uppercase;
 }
 .services p {
   margin: 0;
+  width: 260px;
   margin-bottom: 30px;
 }
 .green {
@@ -236,12 +238,14 @@ body {
 .block-info h3 {
   margin: 0;
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 .block-company {
   width: 360px;
   display: inline-block;
   font-size: 16px;
   vertical-align: middle;
+  font-weight: bold;
 }
 .advantages {
   list-style: none;
@@ -274,6 +278,8 @@ body {
   vertical-align: top;
   width: 100px;
   margin-right: 15px;
+  line-height: 18px;
+  font-weight: normal;
 }
 .percent {
   font-size: 45px;
@@ -284,8 +290,10 @@ body {
   margin-bottom: 25px;
 }
 .percent span {
-  font-size: 18px;
+  font-size: 24px;
   vertical-align: top;
+  display: inline-block;
+  margin-top: 2px;
 }
 .company-logo {
   height: 185px;
@@ -317,7 +325,7 @@ body {
 .company-logo li a:hover{
   opacity: 1;
 }
-.company-logo li a:active{
+.company-logo li a:active {
   opacity: 0.1;
 }
 .company-logo li:nth-child(4) {
@@ -338,10 +346,15 @@ body {
 .block-contacts h2 {
   margin: 0;
   margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
 }
 .block-contacts p {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  color: #666666;
+  width: 210px;
 }
 .block-social {
   display: inline-block;
@@ -377,7 +390,6 @@ body {
 }
 .social li:hover {
   background-color: #d7373b;
-  border-radius: 50%;
 }
 .social-btn:active {
   opacity: 0.2;
@@ -407,6 +419,10 @@ body {
   font-size: 36px;
   line-height: 1;
 }
+.block-discounts p {
+  color: #444444;
+  line-height: 22px;
+}
 /* Страница каталог */
 .main-title {
   text-align: center;
@@ -434,6 +450,7 @@ body {
   width: 260px;
   float: left;
   margin-right: 140px;
+  line-height: 22px;
 }
 .block-sort {
   width: 760px;
@@ -521,31 +538,13 @@ fieldset {
   display: inline-block;
   background: url(../img/slider-round.png) no-repeat;
 }
-.product-groups-filter li label {
-  display: inline-block;
-  background: url(../img/radio-off.png) no-repeat;
-  cursor: pointer;
-  padding-left: 35px;
-  margin-top: 20px;
-}
-.product-groups-filter li label.active {
-  background: url(../img/radio-on.png) no-repeat;
-}
-.manufacturers-filter li label {
-  display: inline-block;
-  background: url(../img/checkbox-off.png) no-repeat;
-  cursor: pointer;
-  padding-left: 35px;
-  margin-top: 20px;
-}
-.manufacturers-filter li label.active {
-  background: url(../img/checkbox-on.png) no-repeat;
-}
 .filter-sort {
   display: inline-block;
   list-style: none;
   margin: 0;
   padding: 0;
+  font-size: 14px;
+  line-height: 18px;
 }
 .filter-sort li{
   display: inline-block;
@@ -561,7 +560,7 @@ fieldset {
 .price:hover {
   opacity: 0.4;
 }
-.price:active, :focus {
+.price:active, .price:focus {
   opacity: 1;
 }
 
@@ -653,7 +652,7 @@ fieldset {
 .btn-catalog:hover {
   background-color: #e74246; 
 }
-.btn-catalog:active {
+.btn-catalog:active, .btn-catalog:focus {
   background-color: #d7373b;
   border-top: 3px solid #c13135;
   color: white;
@@ -716,7 +715,7 @@ fieldset {
   float: left;
   margin-bottom: 60px;
 }
-#to-price {
+.sort-to-price {
   width: 80px;
   height: 40px;
   box-sizing: border-box;
@@ -724,8 +723,9 @@ fieldset {
   border: none;
   background: #eeeeee;
   border-radius: 2px;
+  font-size: 16px;
 }
-#do-price {
+.sort-do-price {
   width: 80px;
   height: 40px;
   box-sizing: border-box;
@@ -734,29 +734,84 @@ fieldset {
   background: #eeeeee;
   border-radius: 2px;
   float: right;
+  font-size: 16px;
 }
 .product-groups-filter {
   list-style: none;
   margin: 0;
   padding: 0;
+  line-height: 25px;
 }
-.product-groups-filter label {
-  opacity: 0.4;
+.product-groups-filter li label {
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 35px;
+  margin-top: 20px;
+  position: relative;
 }
-.manufacturers-filter label {
-  opacity: 0.4;
+input[type="radio"] {
+  display: none;
 }
-.product-groups-filter label:hover {
+.product-groups-filter input[type="radio"] + label::after {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  background: url(../img/radio-off.png) no-repeat;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+.product-groups-filter input[type="radio"]:checked + label::before {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  background: url(../img/radio-on.png) no-repeat;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+}
+.product-groups-filter label:hover::after, .product-groups-filter label:hover::before, .manufacturers-filter label:hover::after, .manufacturers-filter label:hover::before {
   opacity: 1;
 }
-.manufacturers-filter label:hover {
-  opacity: 1;
+.product-groups-filter label::after, .product-groups-filter label::before, .manufacturers-filter label::after, .manufacturers-filter label::before {
+  opacity: 0.4;
 }
-.product-groups-filter label.blocked {
-  opacity: 0.1;
+.manufacturers-filter li label{
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 35px;
+  margin-top: 20px;
+  position: relative;
 }
-.manufacturers-filter label.blocked {
-  opacity: 0.1;
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label::after{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  background: url(../img/checkbox-off.png) no-repeat;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+input[type="checkbox"]:checked + label::before {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  background: url(../img/checkbox-on.png) no-repeat;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
 }
 .manufacturers-filter {
   list-style: none;
@@ -846,7 +901,8 @@ fieldset {
   margin-bottom: 35px;
   padding: 0;
   padding-left: 15px;
-  line-height: 48px;
+  line-height: 50px;
+  height: 50px;
   border-color: #d7dcde;
   border-style: solid;
   border-radius: 2px;

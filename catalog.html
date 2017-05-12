@@ -47,23 +47,23 @@
             <fieldset>
               <legend class="hidden">Стоимость:</legend>
               <label class="mr-10" for="to-price">ОТ</label>
-              <input type="text" name="to-price" id="to-price" placeholder="0" Value="0">
+              <input class="sort-to-price" type="text" name="to-price" id="to-price" placeholder="0" Value="0">
               <label class="ml-30" for="do-price">ДО</label>
-              <input type="text" name="do-price" id="do-price" placeholder="15 000" Value="15 000">
+              <input class="sort-do-price" type="text" name="do-price" id="do-price" placeholder="15 000" Value="15 000">
             </fieldset>
             <fieldset>
               <legend>Сетка:</legend>
               <ul class="product-groups-filter">
                 <li>
-                  <input class="hidden" type="radio" name="group_id" id="Bri" checked>
-                  <label class="active" for="Bri">Адаптивная</label>  
+                  <input type="radio" name="group_id" id="Bri" checked>
+                  <label for="Bri">Адаптивная</label>  
                 </li>
                 <li>
-                  <input class="hidden" type="radio" name="group_id" id="Sre">
+                  <input type="radio" name="group_id" id="Sre">
                   <label for="Sre">Фиксированная</label>
                 </li>
                 <li>
-                  <input class="hidden" type="radio" name="group_id" id="Aks">
+                  <input type="radio" name="group_id" id="Aks">
                   <label for="Aks">Резиновая</label>
                 </li>
               </ul>
@@ -72,24 +72,24 @@
               <legend>Особенности:</legend>
               <ul class="manufacturers-filter">
                 <li>
-                  <input class="hidden" type="checkbox" name="bax" id="bax" checked>
-                  <label class="active" for="bax">Слайдер</label> 
+                  <input type="checkbox" name="bax" id="bax" checked>
+                  <label for="bax">Слайдер</label> 
                 </li>
                 <li>
-                  <input class="hidden" type="checkbox" name="Mr" id="Mr">
+                  <input type="checkbox" name="Mr" id="Mr">
                   <label for="Mr">Блок преимуществ</label>  
                 </li>
                 <li>
-                  <input class="hidden" type="checkbox" name="Sua" id="Sua" checked>
-                  <label class="active" for="Sua">Новости</label>
+                  <input type="checkbox" name="Sua" id="Sua" checked>
+                  <label for="Sua">Новости</label>
                 </li>
                 <li>
-                  <input class="hidden" type="checkbox" name="Mal" id="Mal">
+                  <input type="checkbox" name="Mal" id="Mal">
                   <label for="Mal">Галерея</label> 
                 </li>
                 <li>
-                  <input class="hidden" type="checkbox" name="Mur" id="Mur">
-                  <label class="blocked" for="Mur">Корзина</label> 
+                  <input type="checkbox" name="Mur" id="Mur" checked>
+                  <label for="Mur">Корзина</label> 
                 </li>
               </ul>
             </fieldset>
@@ -127,7 +127,7 @@
             <div class="item-block">
               <h3>Sedona</h3> 
               <p class="item-text">Информационный сайт для туристов</p>
-              <a class="btn btn-catalog" href="#">9 900 руб.</a>
+              <a class="btn btn-catalog" href="#item-1">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog-item">
@@ -135,7 +135,7 @@
             <div class="item-block">
               <h3>Pink app</h3> 
               <p class="item-text">Продуктовый лендинг приложение для iOS и Android</p>
-              <a class="btn btn-catalog" href="#">9 900 руб.</a>
+              <a class="btn btn-catalog" href="#item-2">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog-item">
@@ -143,7 +143,7 @@
             <div class="item-block">
               <h3>Barbershop</h3> 
               <p class="item-text">Сайт салоны красоты для мужчин, да.</p>
-              <a class="btn btn-catalog" href="#">9 900 руб.</a>
+              <a class="btn btn-catalog" href="#item-3">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog-item">
@@ -151,7 +151,7 @@
             <div class="item-block">
               <h3>Mishka</h3> 
               <p class="item-text">Интернет-магазин вязаных игрушек</p>
-              <a class="btn btn-catalog" href="#">9 900 руб.</a>
+              <a class="btn btn-catalog" href="#item-4">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog-item">
@@ -159,7 +159,7 @@
             <div class="item-block">
               <h3>A plus</h3> 
               <p class="item-text">Лендинг для курсов повышения квалификации</p>
-              <a class="btn btn-catalog" href="#">9 900 руб.</a>
+              <a class="btn btn-catalog" href="#item-5">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog-item">
@@ -167,7 +167,7 @@
             <div class="item-block">
               <h3>Кваст</h3> 
               <p class="item-text">Промо-сайт производителя крафтового кваса</p>
-              <a class="btn btn-catalog" href="#">9 900 руб.</a>
+              <a class="btn btn-catalog" href="#item-6">9 900 руб.</a>
             </div>
           </article>
         
@@ -177,13 +177,13 @@
                 <a class="active">1</a>
               </li>
               <li>
-                <a href="#">2</a>
+                <a href="#page-2">2</a>
               </li>
               <li>
-                <a href="#">3</a>
+                <a href="#page-3">3</a>
               </li>
             </ul>
-            <a class="btn-nav" href="#">Следующая</a>
+            <a class="btn-nav" href="#next">Следующая</a>
           </div>
         </div>
       </div>
@@ -195,7 +195,7 @@
             <h2>Nerds design studio</h2>
             <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <p>тел. +7 (812) 275-75-75</p>
-            <a href="#" class="btn btn-map">Напишите нам</a>
+            <a href="#contact-form" class="btn btn-map">Напишите нам</a>
           </div>
         </div>
       </section>
@@ -204,21 +204,21 @@
           <h3>Социальные сети.</h3>
           <ul class="social">
             <li>
-              <a href="#" class="social-btn social-btn-vk">
+              <a href="#vk" class="social-btn social-btn-vk">В контакте
               </a>
             </li>
             <li>
-              <a href="#" class="social-btn social-btn-fb">
+              <a href="#fb" class="social-btn social-btn-fb">Фейсбук
               </a>
             </li>
             <li>
-              <a href="#" class="social-btn social-btn-inst">
+              <a href="#inst" class="social-btn social-btn-inst">Инстаграм
               </a>
             </li>
           </ul>
         </section>
         <section class="block-discounts">
-          <h3>Давайте дружить, это выгодно</h3>
+          <h3>Давайте дружить, это выгодно!</h3>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </section>
       </div>
