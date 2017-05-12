@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet"> 
+    <link href="css/style-min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
-        <nav class="main-navigation">
-          <a href="index.html"><img class="logo" src="img/nerds-logo.png" width="170" height="70" alt="logo-nerds.png"></a>
+        <nav class="main-navigation clearfix">
+          <a class="logo" href="index.html"><img src="img/nerds-logo.png" width="170" height="70" alt="logo-nerds.png"></a>
           <ul>
             <li>
               <a href="#">Студия</a>
@@ -236,7 +237,7 @@
         </div>
         <div class="form-text">
           <label for="text">Текст письма:</label>
-          <textarea type="text" name="text" id="text" placeholder="В свободной форме" required>Прошу связаться какможно быстрей</textarea>
+          <textarea name="text" id="text" placeholder="В свободной форме" required>Прошу связаться какможно быстрей</textarea>
         </div>
         <button class="btn btn-form" type="submit">Отправить</button>
         <a href="#contact-form" class="close"></a>
