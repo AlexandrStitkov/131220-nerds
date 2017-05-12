@@ -884,6 +884,21 @@ input[type="checkbox"]:checked + label::before {
   border-radius: 2px;
   border-width: 2px;
 }
+.contact-form input:invalid {
+  border: 2px solid #e74246;
+}
+.contact-form input:invalid::placeholder {
+  color: #e74246;
+}
+.contact-form input:invalid::placeholder {
+  color: #e74246;
+}
+.contact-form textarea:invalid {
+  border: 2px solid #e74246;
+}
+.contact-form textarea:invalid::placeholder {
+  color: #e74246;
+}
 .form-email {
   display: inline-block;
   width: 360px;
