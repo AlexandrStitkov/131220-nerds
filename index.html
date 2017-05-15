@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="css/normalize.css" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet">
     <link href="css/style-min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
@@ -11,7 +12,7 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation clearfix">
-          <a class="logo"><img src="img/nerds-logo.png" width="170" height="70" alt="logo-nerds.png"></a>
+          <a class="logo"><img src="img/nerds-logo.png" width="160" height="65" alt="logo-nerds.png"></a>
           <ul>
             <li>
               <a href="#">Студия</a>
@@ -23,7 +24,7 @@
               <a href="catalog.html">Магазин</a>
             </li>
             <li>
-              <a href="#">Контакты</a>
+              <a style="margin-left: 20px; padding-left: 0;" href="#">Контакты</a>
             </li>
           </ul>
           <div class="user-block">
@@ -35,10 +36,10 @@
           <li>
             <div id="slide-1" class="slider-info">
               <h2>Долго, дорого, скрупулезно.</h2>
-              <p>Математическая выверенный дизайн для вашего сайта или мобильного приложения</p>
+              <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения</p>
               <a href="#slides-1" class="btn btn-slide">Узнать больше</a>
             </div>
-            <img src="img/nerds-index-slide1.png" width="760" height="420" alt="slide-1.jpg">
+            <img src="img/nerds-index-slide1.png" width="765" height="430" alt="slide-1.jpg">
           </li>
           <li class="hidden">
             <div id="slides-2" class="slider-info">
@@ -74,19 +75,19 @@
     <main class="container">
       <ul class="services clearfix">
         <li>
-          <img src="img/illustration-1.jpg" width="300" height="150" alt="web-site.jpg">
-          <h2 class="servises-title">Веб-сайты</h2>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <img src="img/illustration-1.jpg" width="300" height="148" alt="web-site.jpg">
+          <h2 class="servises-title" style="letter-spacing: 0.4px;">Веб-сайты</h2>
+          <p style="letter-spacing: -0.1px;">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a href="#web-site" class="btn red">Заказать</a>
         </li>
         <li>
-          <img src="img/illustration-2.jpg" width="300" height="150" alt="app.jpg">
+          <img src="img/illustration-2.jpg" width="300" height="148" alt="app.jpg">
           <h2 class="servises-title">Приложения</h2>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <p style="letter-spacing: 0.3px;">Покорите топ-10 приложений в AppStore и Google Play</p>
           <a href="#app" class="btn green">Заказать</a>
         </li>
         <li>
-          <img src="img/illustration-3.jpg" width="300" height="150" alt="present.jpg">
+          <img src="img/illustration-3.jpg" width="300" height="148" alt="present.jpg">
           <h2 class="servises-title">Презентации</h2>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
           <a href="#pres" class="btn yellow">Заказать</a>
@@ -94,12 +95,12 @@
       </ul>
       <div class="about-company">
         <div class="block-info">
-          <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+          <h2>Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</h2>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.</p>
           <h3>Выполняем заказы на разработку:</h3>
           <ul class="advantages">
             <li>
-              Веб-сайты любой сложности
+              Веб-сайтов любой сложности
             </li>
             <li>
               Мобильных приложений для iOS и Android
@@ -110,7 +111,7 @@
           </ul>
         </div>
         <div class="block-company">
-          <img src="img/nerds-illustration.jpg" width="360" height="220" alt="company.jpg">
+          <img src="img/nerds-illustration.jpg" width="360" height="209" alt="company.jpg">
           <h3>С 2004 года любим точность во всём:</h3>
           <ul class="block-percent">
             <li>
@@ -186,24 +187,27 @@
         </section>
       </div>
     </footer>
-    <div class="popup">
-      <form action="https://echo.htmlacademy.ru" class="contact-form" method="post">
-        <h3>Напишите нам</h3>
-        <div class="form-name">
-          <label for="name">Ваше имя:</label>
-          <input type="text" name="name" id="name" placeholder="Представтесь, пожалуйста" required value="Александр">
-        </div>
-        <div class="form-email">
-          <label for="e-mail">Ваш e-mail:</label>
-          <input type="email" name="e-mail" id="e-mail" placeholder="Для отправки ответа" required value="test@mail.ru">
-        </div>
-        <div class="form-text">
-          <label for="text">Текст письма:</label>
-          <textarea name="text" id="text" placeholder="В свободной форме" required>Прошу связаться какможно быстрей</textarea>
-        </div>
-        <button class="btn btn-form" type="submit">Отправить</button>
-        <a href="#contact-form" class="close"></a>
-      </form>
+    <div class="modal">
+      <div class="popup">
+        <form action="https://echo.htmlacademy.ru" class="contact-form" method="post" novalidate>
+          <h3>Напишите нам</h3>
+          <div class="form-name">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Представтесь, пожалуйста" required >
+          </div>
+          <div class="form-email">
+            <label for="e-mail">Ваш e-mail:</label>
+            <input type="email" name="e-mail" id="e-mail" placeholder="Для отправки ответа" required >
+          </div>
+          <div class="form-text">
+            <label for="text">Текст письма:</label>
+            <textarea name="text" id="text" placeholder="В свободной форме" required>всем ку</textarea>
+          </div>
+          <button class="btn btn-form" type="submit">Отправить</button>
+          <a href="#contact-form" class="close"></a>
+        </form>
+      </div>
     </div>
+    <script src="js/script-min.js"></script>
   </body>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="css/normalize.css" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet">
     <link href="css/style-min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
@@ -11,7 +12,9 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation clearfix">
-          <a class="logo" href="index.html"><img src="img/nerds-logo.png" width="170" height="70" alt="logo-nerds.png"></a>
+          <a class="logo" href="index.html">
+            <img src="img/nerds-logo.png" width="160" height="65" alt="logo-nerds.png">
+          </a>
           <ul>
             <li>
               <a href="#">Студия</a>
@@ -23,7 +26,7 @@
               <a class="active">Магазин</a>
             </li>
             <li>
-              <a href="#">Контакты</a>
+              <a style="margin-left: 20px; padding-left: 0;" href="#">Контакты</a>
             </li>
           </ul>
           <div class="user-block">
@@ -37,23 +40,23 @@
       <div class="block-catalog">
         <form action="https://echo.htmlacademy.ru" class="catalog-filter" method="post">
           <div class="catalog-left">
-            <h2 class="mt-60 mb-60">Стоимость:</h2>
+            <h2 class="mt-60 mb-50">Стоимость:</h2>
             <div class="block-price">
               <div class="scale">
                 <div class="progress"></div>
                 <span class="to-price" style="left: 0;"></span>
-                <span class="do-price" style="right: 25%;"></span>
+                <span class="do-price" style="right: 27%;"></span>
               </div>
             </div>
             <fieldset>
               <legend class="hidden">Стоимость:</legend>
               <label class="mr-10" for="to-price">ОТ</label>
               <input class="sort-to-price" type="text" name="to-price" id="to-price" placeholder="0" Value="0">
-              <label class="ml-30" for="do-price">ДО</label>
+              <label class="ml-28" for="do-price">ДО</label>
               <input class="sort-do-price" type="text" name="do-price" id="do-price" placeholder="15 000" Value="15 000">
             </fieldset>
             <fieldset>
-              <legend>Сетка:</legend>
+              <legend class="grid">Сетка:</legend>
               <ul class="product-groups-filter">
                 <li>
                   <input type="radio" name="group_id" id="Bri" checked>
@@ -70,7 +73,7 @@
               </ul>
             </fieldset>
             <fieldset>
-              <legend>Особенности:</legend>
+              <legend style="margin-top: 50px;letter-spacing: 1.5px;">Особенности:</legend>
               <ul class="manufacturers-filter">
                 <li>
                   <input type="checkbox" name="bax" id="bax" checked>
@@ -96,7 +99,7 @@
             </fieldset>
             <button class="btn-filter" type="submit">Показать</button>
           </div>
-          <div class="block-sort mt-60 mb-60">
+          <div class="block-sort mt-60 mb-56">
             <fieldset>
               <legend>Сортировать:</legend>
               <ul class="filter-sort">
@@ -112,27 +115,23 @@
                   <input class="hidden" type="radio" name="group-sort_id" id="by-name">
                   <label class="price" for="by-name">По названию</label>
                 </li>
-                <li>
-                  <a href="#" class="btn-down active"></a>
-                </li>
-                <li>
-                  <a href="#" class="btn-up"></a>
-                </li>
               </ul>
+              <a href="#" class="btn-down active">Вниз</a>
+              <a href="#" class="btn-up">Вверх</a>
             </fieldset>
           </div>          
         </form>
         <div class="catalog-content">
           <article class="catalog-item">
-            <img src="img/img-sedona.jpg" width="360" height="576" alt="img-sedona.jpg">
+            <img src="img/img-sedona.jpg" width="360" height="574" alt="img-sedona.jpg">
             <div class="item-block">
               <h3>Sedona</h3> 
-              <p class="item-text">Информационный сайт для туристов</p>
+              <p class="item-text">Информационный сайт <br>для туристов</p>
               <a class="btn btn-catalog" href="#item-1">9 900 руб.</a>
             </div>
           </article>
           <article class="catalog-item">
-            <img src="img/img-pink.jpg" width="360" height="576" alt="img-pink.jpg">
+            <img src="img/img-pink.jpg" width="360" height="574" alt="img-pink.jpg">
             <div class="item-block">
               <h3>Pink app</h3> 
               <p class="item-text">Продуктовый лендинг приложение для iOS и Android</p>
@@ -140,7 +139,7 @@
             </div>
           </article>
           <article class="catalog-item">
-            <img src="img/img-barbershop.jpg" width="360" height="576" alt="img-barbershop.jpg">
+            <img src="img/img-barbershop.jpg" width="360" height="574" alt="img-barbershop.jpg">
             <div class="item-block">
               <h3>Barbershop</h3> 
               <p class="item-text">Сайт салоны красоты для мужчин, да.</p>
@@ -148,7 +147,7 @@
             </div>
           </article>
           <article class="catalog-item">
-            <img src="img/img-mishka.jpg" width="360" height="576" alt="img-mishka.jpg">
+            <img src="img/img-mishka.jpg" width="360" height="574" alt="img-mishka.jpg">
             <div class="item-block">
               <h3>Mishka</h3> 
               <p class="item-text">Интернет-магазин вязаных игрушек</p>
@@ -156,7 +155,7 @@
             </div>
           </article>
           <article class="catalog-item">
-            <img src="img/img-aplus.jpg" width="360" height="576" alt="img-aplus.jpg">
+            <img src="img/img-aplus.jpg" width="360" height="574" alt="img-aplus.jpg">
             <div class="item-block">
               <h3>A plus</h3> 
               <p class="item-text">Лендинг для курсов повышения квалификации</p>
@@ -164,7 +163,7 @@
             </div>
           </article>
           <article class="catalog-item">
-            <img src="img/img-kvast.jpg" width="360" height="576" alt="img-kvast.jpg">
+            <img src="img/img-kvast.jpg" width="360" height="574" alt="img-kvast.jpg">
             <div class="item-block">
               <h3>Кваст</h3> 
               <p class="item-text">Промо-сайт производителя крафтового кваса</p>
@@ -224,24 +223,27 @@
         </section>
       </div>
     </footer>
-    <div class="popup">
-      <form action="https://echo.htmlacademy.ru" class="contact-form" method="post">
-        <h3>Напишите нам</h3>
-        <div class="form-name">
-          <label for="name">Ваше имя:</label>
-          <input type="text" name="name" id="name" placeholder="Представтесь, пожалуйста" required value="Александр">
-        </div>
-        <div class="form-email">
-          <label for="e-mail">Ваш e-mail:</label>
-          <input type="email" name="e-mail" id="e-mail" placeholder="Для отправки ответа" required value="test@mail.ru">
-        </div>
-        <div class="form-text">
-          <label for="text">Текст письма:</label>
-          <textarea name="text" id="text" placeholder="В свободной форме" required>Прошу связаться какможно быстрей</textarea>
-        </div>
-        <button class="btn btn-form" type="submit">Отправить</button>
-        <a href="#contact-form" class="close"></a>
-      </form>
+    <div class="modal">
+      <div class="popup">
+        <form action="https://echo.htmlacademy.ru" class="contact-form" method="post" novalidate>
+          <h3>Напишите нам</h3>
+          <div class="form-name">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Представтесь, пожалуйста" required>
+          </div>
+          <div class="form-email">
+            <label for="e-mail">Ваш e-mail:</label>
+            <input type="email" name="e-mail" id="e-mail" placeholder="Для отправки ответа" required>
+          </div>
+          <div class="form-text">
+            <label for="text">Текст письма:</label>
+            <textarea name="text" id="text" placeholder="В свободной форме" required></textarea>
+          </div>
+          <button class="btn btn-form" type="submit">Отправить</button>
+          <a href="#contact-form" class="close"></a>
+        </form>
+      </div>
     </div>
+    <script src="js/script-min.js"></script>
   </body>
 </html>
