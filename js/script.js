@@ -42,6 +42,9 @@ slide1.addEventListener("click", function(est) {
   slides1.classList.remove("hidden");
   slides2.classList.add("hidden");
   slides3.classList.add("hidden");
+  slide1.classList.add("active");
+  slide2.classList.remove("active");
+  slide3.classList.remove("active");
 });
 slide2.addEventListener("click", function(est) {
   est.preventDefault();
@@ -49,6 +52,9 @@ slide2.addEventListener("click", function(est) {
   slides1.classList.add("hidden");
   slides2.classList.remove("hidden");
   slides3.classList.add("hidden");
+  slide1.classList.remove("active");
+  slide2.classList.add("active");
+  slide3.classList.remove("active");
 });
 slide3.addEventListener("click", function(est) {
   est.preventDefault();
@@ -56,4 +62,7 @@ slide3.addEventListener("click", function(est) {
   slides1.classList.add("hidden");
   slides2.classList.add("hidden");
   slides3.classList.remove("hidden");
+  slide1.classList.remove("active");
+  slide2.classList.remove("active");
+  slide3.classList.add("active");
 });
