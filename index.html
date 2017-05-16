@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="css/normalize.css" rel="stylesheet"> 
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style-min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
@@ -33,41 +32,41 @@
         </nav>
         
         <ul class="slider">
-          <li>
-            <div id="slide-1" class="slider-info">
+          <li  id="slide-1">
+            <div class="slider-info">
               <h2>Долго, дорого, скрупулезно.</h2>
               <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения</p>
               <a href="#slides-1" class="btn btn-slide">Узнать больше</a>
             </div>
             <img src="img/nerds-index-slide1.png" width="765" height="430" alt="slide-1.jpg">
           </li>
-          <li class="hidden">
+          <li  id="slide-2" class="hidden">
             <div id="slides-2" class="slider-info">
-              <h2>Любим математику как никто другой</h2>
+              <h2 style="font-size: 40px;">Любим математику как никто другой</h2>
               <p>Никакого креатива, только математические формулы для расчёта идеальных пропорций</p>
               <a href="#slide-2" class="btn btn-slide">Узнать больше</a>
             </div>
-            <img src="img/nerds-index-slide2.png" width="760" height="420" alt="slide-2.jpg">
+            <img src="img/nerds-index-slide2.png" width="765" height="430" alt="slide-2.jpg">
           </li>
-          <li class="hidden">
-            <div id="slide-3" class="slider-info">
-              <h2>Только ночь, только хардкор</h2>
+          <li  id="slide-3" class="hidden">
+            <div class="slider-info">
+              <h2 style="font-size: 50px;">Только ночь, только хардкор</h2>
               <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
               <a href="#slides-3" class="btn btn-slide">Узнать больше</a>
             </div>
-            <img src="img/nerds-index-slide3.png" width="760" height="420" alt="slide-3.jpg">
+            <img src="img/nerds-index-slide3.png" width="765" height="430" alt="slide-3.jpg">
           </li>
         </ul>
 
         <ul class="slider-nav">
           <li>
-            <a class="active" href="#slide-1">Слайд 1</a>
+            <a class="slide-1 active" href="#slide-1">Слайд 1</a>
           </li>
           <li>
-            <a href="#slide-2">Слайд 2</a>
+            <a class="slide-2" href="#slide-2">Слайд 2</a>
           </li>
           <li>
-            <a href="#slide-3">Слайд 3</a>
+            <a class="slide-3" href="#slide-3">Слайд 3</a>
           </li>
         </ul>
       </div>
@@ -131,8 +130,8 @@
       </div>
       <ul class="company-logo">
         <li>
-          <a href="#htmlacademy">
-            <img src="img/logo-1.png" width="260" height="185" alt="htmlacademy.png">
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-1.png" width="260" height="185" alt="Лендинг интенсива «Базовый HTML и CSS»">
           </a>
         </li>
         <li>
@@ -155,6 +154,7 @@
     <footer class="main-footer">
       <section class="block-map">
         <div class="container">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d999.3055289220563!2d30.32216539016665!3d59.93859584575367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1494935610189" width="1440" height="415"></iframe>
           <div class="block-contacts">
             <h2>Nёrds design studio</h2>
             <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -201,7 +201,7 @@
           </div>
           <div class="form-text">
             <label for="text">Текст письма:</label>
-            <textarea name="text" id="text" placeholder="В свободной форме" required>всем ку</textarea>
+            <textarea name="text" id="text" placeholder="В свободной форме" required></textarea>
           </div>
           <button class="btn btn-form" type="submit">Отправить</button>
           <a href="#contact-form" class="close"></a>
